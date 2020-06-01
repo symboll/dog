@@ -1562,6 +1562,64 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@better-scroll/core@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/core/-/core-2.0.0-beta.8.tgz#c067d64f28922d050a616f7d84f8d2c907e391cf"
+  dependencies:
+    "@better-scroll/shared-utils" "^2.0.0-beta.8"
+
+"@better-scroll/mouse-wheel@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/mouse-wheel/-/mouse-wheel-2.0.0-beta.8.tgz#2fd9dfdb6c7a581f85b9a7a52fa475afa40b7294"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
+"@better-scroll/observe-dom@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/observe-dom/-/observe-dom-2.0.0-beta.8.tgz#8116553d9a41e25830955dc4372a2294c7df3fe1"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
+"@better-scroll/pull-down@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/pull-down/-/pull-down-2.0.0-beta.8.tgz#62d8df2eea8e4b87bed54730e449654aff4479bf"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
+"@better-scroll/pull-up@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/pull-up/-/pull-up-2.0.0-beta.8.tgz#6da87facac4d5e9dc4e599976970ce2fcdc2c260"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
+"@better-scroll/scroll-bar@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/scroll-bar/-/scroll-bar-2.0.0-beta.8.tgz#263831f9bfb7db81fa7a3faab55fae424639ea22"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
+"@better-scroll/shared-utils@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/shared-utils/-/shared-utils-2.0.0-beta.8.tgz#0f884af36ea251dddccaf2d7b1a550a5273bc2a2"
+
+"@better-scroll/slide@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/slide/-/slide-2.0.0-beta.8.tgz#7b6b7991466261e73f4d4c7a8d2258c330ecec94"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
+"@better-scroll/wheel@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/wheel/-/wheel-2.0.0-beta.8.tgz#f60281a060fbbf83034de37c17966a5601c051be"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
+"@better-scroll/zoom@^2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@better-scroll/zoom/-/zoom-2.0.0-beta.8.tgz#cba554865eab899789df5ed7010da19f483874e8"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
@@ -2769,6 +2827,20 @@ bcrypt-pbkdf@^1.0.0:
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
   dependencies:
     tweetnacl "^0.14.3"
+
+better-scroll@^2.0.0-beta.8:
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/better-scroll/-/better-scroll-2.0.0-beta.8.tgz#e34009ef13575c56c87e15381b50672e64bf0d20"
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.8"
+    "@better-scroll/mouse-wheel" "^2.0.0-beta.8"
+    "@better-scroll/observe-dom" "^2.0.0-beta.8"
+    "@better-scroll/pull-down" "^2.0.0-beta.8"
+    "@better-scroll/pull-up" "^2.0.0-beta.8"
+    "@better-scroll/scroll-bar" "^2.0.0-beta.8"
+    "@better-scroll/slide" "^2.0.0-beta.8"
+    "@better-scroll/wheel" "^2.0.0-beta.8"
+    "@better-scroll/zoom" "^2.0.0-beta.8"
 
 big.js@^5.2.2:
   version "5.2.2"
@@ -4003,6 +4075,12 @@ dom-serializer@0:
   dependencies:
     domelementtype "^2.0.1"
     entities "^2.0.0"
+
+dom7@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.1.5.tgz#a79411017800b31d8400070cdaebbfc92c1f6377"
+  dependencies:
+    ssr-window "^2.0.0"
 
 domain-browser@^1.1.1:
   version "1.2.0"
@@ -9480,6 +9558,10 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-2.0.0.tgz#98c301aef99523317f8d69618f0010791096efc4"
+
 ssri@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
@@ -9794,6 +9876,13 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+swiper@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.4.1.tgz#6731e000e97f8b6560c11b141ebaf559063af565"
+  dependencies:
+    dom7 "^2.1.5"
+    ssr-window "^2.0.0"
 
 symbol-observable@^1.2.0:
   version "1.2.0"
