@@ -13,4 +13,4 @@ module.exports = override(
   addWebpackResolve({
     extensions: ['.jsx', '.js', '.json']
   })
-);
+)
