@@ -2,6 +2,11 @@ import * as actionTypes from "./constants"
 import { fromJS } from "immutable" // 将 JS 对象转换成 immutable 对象
 import { getBannerRequest, getRecommendListRequest } from "@/api/recommend.js"
 
+export const changeEnterLoading = (data) => ({
+  type: actionTypes.CHANGE_ENTER_LOADING,
+  data
+});
+
 export const changeBannerList = (data) => ({
   type: actionTypes.CHANGE_BANNER,
   data: fromJS(data),
@@ -17,8 +22,8 @@ export const getBannerList = () => {
     getBannerRequest()
       .then((data) => {
         dispatch(changeBannerList(data.banners))
-      })
-      .catch(() => {
+        dispatch (changeEnterLoading (false))
+      }).catch(() => {
         console.log("轮播图数据传输错误")
       })
   }
