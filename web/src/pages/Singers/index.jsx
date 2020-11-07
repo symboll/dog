@@ -41,7 +41,7 @@ function Singers(props) {
   }
 
   useEffect(() => {
-    if (!singerList.toJS().length > 0) {
+    if (!singerList.size) {
       getHotSingerDispatch()
     }
   }, [])
