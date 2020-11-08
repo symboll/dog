@@ -1,7 +1,7 @@
 import React, { memo, useEffect } from "react"
 import { connect } from "react-redux"
 import { forceCheck } from 'react-lazyload'
-
+import { renderRoutes } from 'react-router-config'
 import Slider from "@/components/slider"
 import RecommendList from "@/components/list"
 import Scroll from "@/components/scroll"
@@ -35,6 +35,7 @@ const Recommend = memo(function (props) {
         </div>
       </Scroll>
       { enterLoading ? <Loading></Loading> : null }
+      { renderRoutes (props.route.routes) }
     </Content>
   )
 })
